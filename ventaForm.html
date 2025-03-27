@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Carga</title>
+    <title>Formulario de Venta</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
   <!-- Favicons -->
@@ -38,67 +38,38 @@
   </style>
 </head>
 <body>
+    <a class="cta-btn" href="adminUser.html">Atrás</a>
     <div class="container-ConduForm">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="form-container">
                     <div class="form-header">
-                        <h2><i class="fas fa-user-edit me-2"></i>Formulario de Registro - Carga</h2>
+                        <h2><i class="fas fa-user-edit me-2"></i>Formulario de Registro - <span style="color: var(--accent-color);">Venta</span></h2>
                     </div>
                     <form>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label for="fecha-venta" class="form-label">Fecha de Venta</label>
+                                <input type="date" class="form-control" id="fecha-venta" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="valor-venta" class="form-label">Valor</label>
+                                <input type="number" class="form-control" id="valor-venta" placeholder="Ingrese el valor de la venta" required>
+                            </div>
+                        </div>
+
                         <div class="row mb-4">
                             <div class="col-md-6">
                                 <label for="descripcion" class="form-label">Descripción</label>
-                                <input type="text" class="form-control" id="descripcion" placeholder="Ingrese la descripción de la carga">
-                            </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col-md-6">
-                                <label for="peso" class="form-label">Peso</label>
-                                <input type="number" class="form-control" id="peso" placeholder="Ingrese el peso de la carga" required>
+                                <input type="text" class="form-control" id="descripcion" placeholder="Ingrese la distancia de la venta">
                             </div>
                             <div class="col-md-6">
-                                <label for="cliente" class="form-label">Cliente</label>
-                                <select class="form-select" id="cliente" required>
+                                <label for="carga-venta" class="form-label">Carga</label>
+                                <select class="form-select" id="carga-venta" required>
                                     <option value="" selected disabled>Seleccione una opción</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col-md-6">
-                                <label for="vehiculo" class="form-label">Vehículo</label>
-                                <select class="form-select" id="vehiculo" required>
-                                    <option value="" selected disabled>Seleccione una opción</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="conductor" class="form-label">Conductor</label>
-                                <select class="form-select" id="conductor" required>
-                                    <option value="" selected disabled>Seleccione una opción</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row mb-4">
-                            <div class="col-md-6">
-                                <label for="fechaVencimiento" class="form-label">Fecha inicio de la carga</label>
-                                <input type="date" class="form-control" id="fechaInicioCarga" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="fechaVencimiento" class="form-label">Fecha fin de la carga</label>
-                                <input type="date" class="form-control" id="fechaFinCarga" required>
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="foto" class="form-label">Foto de Carga</label>
-                            <div class="file-upload">
-                                <label for="foto" class="custom-file-upload">
-                                    <i class="fas fa-cloud-upload-alt"></i> Seleccionar foto
-                                </label>
-                                <input type="file" id="fotoCarga" accept="image/*">
-                            </div>
-                            <img id="previewImgCarga" class="preview-image" src="" alt="Vista previa">
                         </div>
 
                         <div class="d-flex justify-content-between mt-5">

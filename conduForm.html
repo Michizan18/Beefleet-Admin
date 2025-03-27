@@ -38,12 +38,13 @@
   </style>
 </head>
 <body>
+    <a class="cta-btn" href="adminUser.html">Atrás</a>
     <div class="container-ConduForm">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="form-container">
                     <div class="form-header">
-                        <h2><i class="fas fa-user-edit me-2"></i>Formulario de Registro - Conductor</h2>
+                        <h2><i class="fas fa-user-edit me-2"></i>Formulario de Registro - <span style="color: var(--accent-color);">Conductor</span></h2>
                     </div>
                     <form>
                         <div class="row mb-4">
@@ -59,25 +60,25 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="documento" class="form-label">Número de documento</label>
-                                <input type="text" class="form-control" id="documento" placeholder="Ingrese su número de documento" required>
+                                <input type="text" class="form-control" id="documento" placeholder="Ingrese el número de documento" required>
                             </div>
                         </div>
 
                         <div class="row mb-4">
                             <div class="col-md-6">
-                                <label for="nombres" class="form-label">Nombre(s)</label>
-                                <input type="text" class="form-control" id="nombres" placeholder="Ingrese su(s) nombre(s)" required>
+                                <label for="nombres-conductor" class="form-label">Nombre(s)</label>
+                                <input type="text" class="form-control" id="nombres-conductor" placeholder="Ingrese su(s) nombre(s)" required>
                             </div>
                             <div class="col-md-6">
-                                <label for="apellidos" class="form-label">Apellido(s)</label>
-                                <input type="text" class="form-control" id="apellidos" placeholder="Ingrese su(s) apellido(s)" required>
+                                <label for="apellidos-conductor" class="form-label">Apellido(s)</label>
+                                <input type="text" class="form-control" id="apellidos-conductor" placeholder="Ingrese su(s) apellido(s)" required>
                             </div>
                         </div>
 
                         <div class="row mb-4">
                             <div class="col-md-6">
-                                <label for="correo" class="form-label">Correo electrónico</label>
-                                <input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com" required>
+                                <label for="correo-conductor" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="correo-conductor" placeholder="correo@ejemplo.com" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="telefono" class="form-label">Teléfono</label>
@@ -110,18 +111,18 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label for="fechaVencimiento" class="form-label">Fecha de vencimiento</label>
-                                <input type="date" class="form-control" id="fechaVencimiento" required>
+                                <label for="fechaVencimientoLicencia" class="form-label">Fecha de vencimiento</label>
+                                <input type="date" class="form-control" id="fechaVencimientoLicencia" required>
                             </div>
                         </div>
 
                         <div class="mb-4">
                             <label for="foto" class="form-label">Foto de Perfil</label>
                             <div class="file-upload">
-                                <label for="foto" class="custom-file-upload">
+                                <label for="foto-perfil" class="custom-file-upload">
                                     <i class="fas fa-cloud-upload-alt"></i> Seleccionar foto
                                 </label>
-                                <input type="file" id="fotoPerfil" accept="image/*">
+                                <input type="file" id="foto-perfil" accept="image/*">
                             </div>
                             <img id="previewImg" class="preview-image" src="" alt="Vista previa">
                         </div>
